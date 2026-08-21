@@ -1,0 +1,57 @@
+[
+  {
+    "name": "InScript",
+    "entries": 94,
+    "unique_outputs": 94,
+    "multi_codepoint_outputs": [
+      "्र",
+      "र्",
+      "ज्ञ",
+      "त्र",
+      "क्ष",
+      "श्र"
+    ],
+    "duplicate_outputs": []
+  },
+  {
+    "name": "Kruti Dev / Remington emulation",
+    "entries": 94,
+    "unique_outputs": 91,
+    "multi_codepoint_outputs": [
+      "्र",
+      "फ़",
+      "म्",
+      "त्",
+      "ज्",
+      "ल्",
+      "न्",
+      "प्",
+      "व्",
+      "च्",
+      "क्ष",
+      "क्",
+      "थ्",
+      "श्र",
+      "ज्ञ",
+      "स्",
+      "रू",
+      "र्",
+      "ग्",
+      "ब्"
+    ],
+    "duplicate_outputs": [
+      {
+        "value": "ल",
+        "count": 2
+      },
+      {
+        "value": "घ",
+        "count": 2
+      },
+      {
+        "value": "झ",
+        "count": 2
+      }
+    ]
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "file": "index.html",
+  "bytes": 42291,
+  "gzip_bytes": 12549,
+  "sha256": "858a09c7f8826114978d99b43eac6f982cf1eb316f0e9cc133489b8f9fcd841b",
+  "lines": 140,
+  "script_blocks": 1,
+  "closing_script_blocks": 1,
+  "html_elements": 116,
+  "ids": 40,
+  "duplicate_ids": {},
+  "external_http_references": [],
+  "counts": {
+    "eval_calls": 0,
+    "new_function_calls": 0,
+    "document_write_calls": 0,
+    "innerHTML_assignments": 1,
+    "network_api_mentions": 0,
+    "persistent_storage_mentions": 0
+  }
+}
