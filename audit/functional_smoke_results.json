@@ -1,0 +1,98 @@
+{
+  "passed": 23,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "Vulkan branding renders",
+      "pass": true
+    },
+    {
+      "name": "default layout is QWERTY",
+      "pass": true
+    },
+    {
+      "name": "default font is Kruti Dev 010",
+      "pass": true
+    },
+    {
+      "name": "virtual keyboard renders",
+      "pass": true
+    },
+    {
+      "name": "three dialogs exist",
+      "pass": true
+    },
+    {
+      "name": "rich paste keeps bold",
+      "pass": true
+    },
+    {
+      "name": "rich paste keeps italic",
+      "pass": true
+    },
+    {
+      "name": "rich paste keeps underline",
+      "pass": true
+    },
+    {
+      "name": "rich paste strips image",
+      "pass": true
+    },
+    {
+      "name": "rich paste strips script",
+      "pass": true
+    },
+    {
+      "name": "image-only paste changes nothing",
+      "pass": true
+    },
+    {
+      "name": "English Keys Buster selects Georgia",
+      "pass": true
+    },
+    {
+      "name": "correct English key advances",
+      "pass": true
+    },
+    {
+      "name": "wrong key also advances",
+      "pass": true
+    },
+    {
+      "name": "wrong key is recorded",
+      "pass": true
+    },
+    {
+      "name": "Backspace does not advance Keys Buster",
+      "pass": true
+    },
+    {
+      "name": "Keys Buster completion opens results",
+      "pass": true
+    },
+    {
+      "name": "Hindi Keys Buster selects Kruti Dev",
+      "pass": true
+    },
+    {
+      "name": "Kruti Remington t maps to ज",
+      "pass": true
+    },
+    {
+      "name": "custom resize changes editor width",
+      "pass": true
+    },
+    {
+      "name": "custom resize changes editor height",
+      "pass": true
+    },
+    {
+      "name": "format commands are wired",
+      "pass": true
+    },
+    {
+      "name": "page scrollbar enters idle state",
+      "pass": true
+    }
+  ]
+}

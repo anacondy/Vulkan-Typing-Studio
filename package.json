@@ -1,0 +1,20 @@
+{
+  "name": "vulkan-typing-studio",
+  "version": "0.7.0",
+  "private": true,
+  "description": "Offline-first English and Hindi typing studio",
+  "license": "Apache-2.0",
+  "scripts": {
+    "test": "npm run test:syntax && npm run check:sync && npm run test:mappings && npm run test:smoke",
+    "test:syntax": "node --check src/app.js",
+    "check:sync": "node audit/sync_check.js index.html src/app.js release/Vulkan-Typing-Studio-Standalone.html",
+    "test:mappings": "node audit/mapping_audit.js src/app.js",
+    "test:smoke": "node audit/functional_smoke.js index.html"
+  },
+  "devDependencies": {
+    "jsdom": "24.1.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
