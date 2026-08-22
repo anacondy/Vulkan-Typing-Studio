@@ -1,0 +1,7 @@
+# Vulkan Typing Studio 0.7.0 — release asset checksums (SHA-256)
+# Verify after download:  sha256sum -c SHA256SUMS.txt
+
+a2e3df82a4bf3ddd4119361d9b2f00af414a07f6d046d0f29c4a39e1ed5690b7  Vulkan-Typing-Studio-Windows-x64.zip
+0ab41ef6b0793951f48bf593cf9cc19e8eb35781e7577a944bb99b9919186121  Vulkan-Typing-Studio-Linux-x64.tar.gz
+9e244bfdf986219989ae32d3ccdaf51bafe3bd016f1df2d8a5ca824b929a1fcc  Vulkan-Typing-Studio-macOS-universal.tar.gz
+0bb2a8444a3ced699742c2299facbf141de94ede72c8a191b3b81932be4f1a42  Vulkan-Typing-Studio-Windows7-Portable.zip

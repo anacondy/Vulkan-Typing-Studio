@@ -1,0 +1,5 @@
+Vulkan source code is licensed under Apache License 2.0.
+
+No font binaries are included. Poor Richard, Kruti Dev 010, Mangal, Nirmala UI, Shruti, Chanakya, Arial, and Georgia remain subject to their respective owners' licenses. Install only properly licensed copies.
+
+The package contains no third-party runtime JavaScript and performs no network requests.

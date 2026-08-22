@@ -11,6 +11,13 @@ All notable changes to Vulkan Typing Studio are documented here.
 - Pointer-captured resize grips
 - Five-second page scrollbar idle fade
 - GitHub-ready documentation and audit suite
+- Offline portable release packages (no install, no network):
+  - `Vulkan-Typing-Studio-Windows-x64.zip` (modern Windows)
+  - `Vulkan-Typing-Studio-Linux-x64.tar.gz` (modern Linux)
+  - `Vulkan-Typing-Studio-macOS-universal.tar.gz` (macOS Apple Silicon + Intel)
+  - `Vulkan-Typing-Studio-Windows7-Portable.zip` (Windows 7 legacy, separate)
+- Reproducible, offline `release/build-packages.sh` (uses only zip, tar, sha256sum)
+- Release-asset checksum manifest at `release/SHA256SUMS.txt`
 
 ### Changed
 

@@ -49,6 +49,30 @@ chmod +x release/start_linux.sh
 
 The repository root contains `index.html`, so GitHub Pages can publish it directly from the default branch/root folder.
 
+## Download and run
+
+You do **not** need to clone the repository or install anything. Download the
+matching asset from the **Releases** page, extract it, and open it.
+
+| You are on…                                          | Download this asset                           | Then run… |
+|------------------------------------------------------|----------------------------------------------|-----------|
+| Windows 8.1 / 10 / 11 (modern)                       | `Vulkan-Typing-Studio-Windows-x64.zip`       | Double-click `Start.bat` |
+| Linux (any current distribution)                     | `Vulkan-Typing-Studio-Linux-x64.tar.gz`      | `./start.sh` (first time: `chmod +x start.sh`) |
+| macOS 11+ (Apple Silicon **or** Intel)              | `Vulkan-Typing-Studio-macOS-universal.tar.gz`| Double-click `start.command` (first time: right-click → Open) |
+| Windows 7 SP1 (legacy, offline use only)            | `Vulkan-Typing-Studio-Windows7-Portable.zip` | Run `Vulkan Compatibility Check.bat`, then `Start.bat` |
+
+Every package is fully self-contained and offline. Each archive bundles the
+standalone `Vulkan-Typing-Studio-Standalone.html`, a one-click launcher, a
+`README.txt`, and the Apache-2.0 `LICENSE`. There are **no** installers,
+accounts, network requests, or dependencies.
+
+> The modern packages are **not** for Windows 7. Windows 7 users must use the
+> separate `Vulkan-Typing-Studio-Windows7-Portable.zip` asset, which includes an
+> offline compatibility/diagnostics check. See [Known limitations](#known-limitations).
+
+You can also just double-click `Vulkan-Typing-Studio-Standalone.html` inside any
+package to open it in your default web browser.
+
 ## Current defaults
 
 - Layout: **QWERTY**
@@ -162,10 +186,17 @@ This does not replace real-browser testing on Windows and Linux. See the report 
 .
 ├── index.html                         # GitHub Pages / direct-run app
 ├── src/app.js                         # Reviewable JavaScript source
+├── Vulkan-Typing-Studio-Windows-x64.zip        # modern Windows portable release
+├── Vulkan-Typing-Studio-Linux-x64.tar.gz       # modern Linux portable release
+├── Vulkan-Typing-Studio-macOS-universal.tar.gz # macOS portable release (Apple Silicon + Intel)
+├── Vulkan-Typing-Studio-Windows7-Portable.zip  # Windows 7 legacy portable release
 ├── release/
 │   ├── Vulkan-Typing-Studio-Standalone.html
 │   ├── start_windows7.bat
-│   └── start_linux.sh
+│   ├── start_linux.sh
+│   ├── win7/                          # Windows 7 package sources (diagnostics + launchers)
+│   ├── build-packages.sh              # reproducible offline package builder
+│   └── SHA256SUMS.txt                 # release-asset checksums
 ├── assets/vulkan-preview.png
 ├── audit/                             # Reproducible tests and captured results
 ├── docs/
@@ -203,7 +234,11 @@ This does not replace real-browser testing on Windows and Linux. See the report 
 
 ## Packaging direction
 
-The likely path is:
+For the 0.7.0 release, distributable builds ship as **self-contained portable
+archives** (see [Download and run](#download-and-run)) — no installers or native
+runtimes. The likely longer-term path is:
+
+1. Keep the standalone HTML release.
 
 1. Keep the standalone HTML release.
 2. Use Tauri for supported modern Windows/Linux builds.
