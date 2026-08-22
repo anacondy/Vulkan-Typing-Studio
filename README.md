@@ -203,7 +203,8 @@ This does not replace real-browser testing on Windows and Linux. See the report 
 │   ├── USER_GUIDE.md
 │   ├── TRANSPARENCY_REPORT.md
 │   ├── ROADMAP.md
-│   └── V7_CHANGES.md
+│   ├── V7_CHANGES.md
+│   └── RELEASE-NOTES.md
 ├── .github/                           # CI and issue templates
 ├── LICENSE
 ├── SECURITY.md
@@ -237,8 +238,6 @@ This does not replace real-browser testing on Windows and Linux. See the report 
 For the 0.7.0 release, distributable builds ship as **self-contained portable
 archives** (see [Download and run](#download-and-run)) — no installers or native
 runtimes. The likely longer-term path is:
-
-1. Keep the standalone HTML release.
 
 1. Keep the standalone HTML release.
 2. Use Tauri for supported modern Windows/Linux builds.
