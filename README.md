@@ -2,6 +2,8 @@
 
 A lightweight, offline-first English and Hindi typing workspace with a focused editor, animated virtual keyboard, timed sessions, safe rich-text emphasis, and a character-by-character **Keys Buster** mode.
 
+Demo >>> https://anacondy.github.io/Vulkan-Typing-Studio/ 
+
 ![Vulkan Typing Studio preview](assets/vulkan-preview.png)
 
 > **Project status:** V7 functional prototype. Suitable for personal practice and evaluation; not yet a certified government-exam engine or production desktop installer.
